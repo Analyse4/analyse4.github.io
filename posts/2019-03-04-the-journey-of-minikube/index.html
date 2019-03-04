@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>The Journey of Minikube | Bla~ Bla~</title>
+
+
+
+<link href="https://analyse4.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Bla~ Bla~" />
+
+<link rel="stylesheet" href="/css/style.css"/><link rel='stylesheet' href='https://analyse4.github.io/css/custom.css'><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://analyse4.github.io">
+          <h1 class="title is-4">Bla~ Bla~</h1>
+        </a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile"><a class="level-item" aria-label="email" href='mailto:analysek4@gmail.com'
+            target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+    <polyline points="22,6 12,13 2,6"/>
+    
+  </svg></i>
+            </span>
+          </a><a class="level-item" aria-label="twitter" href='https://twitter.com/analysek4'
+            target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+    
+  </svg></i>
+            </span>
+          </a><a class="level-item" aria-label="github" href='https://github.com/Analyse4'
+            target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+    
+  </svg></i>
+            </span>
+          </a><a class="level-item" aria-label="gitlab" href='https://gitlab.com/analysek4'
+            target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path>
+    
+  </svg></i>
+            </span>
+          </a></nav>
+      </div>
+    </nav>
+
+    <nav class="nav">
+      
+
+      
+    </nav>
+
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="subtitle tags is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/kubernetes">#kubernetes</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">March 4, 2019</h2>
+    <h1 class="title">The Journey of Minikube</h1>
+    
+    <div class="content">
+      
+
+<p><img src="https://raw.githubusercontent.com/kubernetes/minikube/master/images/logo/logo.png" alt="icon" /></p>
+
+<p>折腾了一周如何装minikube，记录一下</p>
+
+<ul>
+<li><p>安装 CentOS</p>
+
+<ul>
+<li><p>安装系统</p></li>
+
+<li><p>连接网络</p></li>
+
+<li><p>以太网</p></li>
+
+<li><p>WI-FI</p></li>
+</ul></li>
+
+<li><p>安装 ss</p>
+
+<ul>
+<li>配置文件</li>
+</ul></li>
+
+<li><p>安装 privoxy</p>
+
+<ul>
+<li>配置文件</li>
+</ul></li>
+
+<li><p>设置 ss 和 privoxy 开机自启</p></li>
+
+<li><p>开启VT-x or AMD-v virtualization</p></li>
+
+<li><p>安装 virtualbox</p></li>
+
+<li><p>安装 kubectl</p></li>
+
+<li><p>安装 minikube</p></li>
+
+<li><p>参考</p></li>
+</ul>
+
+<h2 id="安装centos">安装CentOS</h2>
+
+<h5 id="environment"><strong>Environment</strong></h5>
+
+<ul>
+<li>hardware: thinkpad-T410</li>
+<li>version:  CentOS 7.5.1804</li>
+</ul>
+
+<p>(tips:发现了一个用于制作系统盘的软件Etcher)</p>
+
+<h5 id="安装系统">安装系统</h5>
+
+<p>镜像从相应官网下载，制作好系统盘后，think-T410开机时按F12可以进入引导设备选择界面，选择从U盘启动，会进入到CentOS7安装引导界面</p>
+
+<p><img src="https://i.stack.imgur.com/qyqly.png" alt="install-1" /></p>
+
+<p>在这里遇到了问题，无论以何种规格安装(mininal, graph)都会在安装过程中界面卡死，只能重启重装，之后还会在安装界面卡死，周而复始，起初我以为是目前的centos版本对于thinkpad-T410的硬件来说太新了，所以换ubuntu装了下(这里不得不提一句ubuntu的安装界面真的很友好)，发现也出现一样的问题，后来在StackExchange上找到了答案</p>
+
+<blockquote>
+<p>This happens often on computers with old graphics hardware. By default the system tries to use a 1024x768 framebuffer mode to start the system with, but this doesn&rsquo;t work with some old PCs.</p>
+
+<p>In this case, you can select <strong>Troubleshooting</strong> from the menu, and then select <strong>Install <distro> in basic graphics mode</strong>.</p>
+</blockquote>
+
+<p>按照上面的方式试了下</p>
+
+<p><img src="https://i.stack.imgur.com/BIGmo.png" alt="install-2" /></p>
+
+<p>果然还不行，看来这台机器的图形卡真的太老了:smile_cat:</p>
+
+<blockquote>
+<p>On some <em>really</em> ancient computers, even this won&rsquo;t work. In that case you&rsquo;ll need to do a text mode installation. Do this by selecting <strong>Install <distro></strong> but instead of pressing <code>Enter</code>, press <code>Tab</code> and add <code>nomodeset text</code> to the end of the boot command line.</p>
+
+<p>[StackExange]: <a href="https://unix.stackexchange.com/questions/353896/linux-install-goes-to-blank-screen" target="_blank">https://unix.stackexchange.com/questions/353896/linux-install-goes-to-blank-screen</a></p>
+</blockquote>
+
+<p>只能按照最后一种方式安装，值得注意的是，<code>nomode text</code>这种模式是以命令行的交互方式安装，相当于彻底砍掉了图形界面，即使图形卡再旧也不会对这种模式有任何影响，结果成功</p>
+
+<h5 id="连接网络">连接网络</h5>
+
+<h6 id="以太网">以太网</h6>
+
+<p>First, type <code>nmcli d</code> command in your terminal for quick list <strong>ethernet card</strong> installed on your machine:</p>
+
+<p><img src="https://lintut.com/wp-content/uploads/2014/08/CentOS_7-network-setup.png" alt="connect-1" /></p>
+
+<p>Type <code>nmtui</code> command in your terminal to open <strong>Network manager</strong>. After opening Network manager chose <strong>“Edit connection</strong>” and press Enter (Use <code>TAB</code> button for choosing options).</p>
+
+<p><img src="https://lintut.com/wp-content/uploads/2014/08/CentOS_7-Network-manager-screen.png" alt="connect-2" /></p>
+
+<p>Now choose you network interfaces and click “<strong>Edit</strong>”</p>
+
+<p><img src="https://lintut.com/wp-content/uploads/2014/08/Edit-your-network-interfaces.png" alt="connect-3" /></p>
+
+<p>Choose “<strong>Automatic</strong>” in <strong>IPv4 CONFIGURATION</strong> and check <strong>Automatically connect</strong> check box and press <code>OK</code> and quit from Network manager.</p>
+
+<p><img src="https://lintut.com/wp-content/uploads/2014/08/Set-ip-adress-using-DHCP.png" alt="connect-4" /></p>
+
+<p>Reset network services:</p>
+
+<pre><code class="language-ssh">service network restart
+</code></pre>
+
+<p>Now your server will get IP Address from DHCP .</p>
+
+<p><img src="https://lintut.com/wp-content/uploads/2014/08/CentOS-7-check-ip-address.png" alt="connect-5" /></p>
+
+<h6 id="无线网">无线网</h6>
+
+<p>CentOS 7 以后采用**NetworkManager <strong>来管理网络连接，首先需要确保</strong>NetworkManager <strong>能够管理无线设备从而支持WI-FI，要保证这一点，需要安装</strong>NetworkManager -wifi<strong>，并重启</strong>NetworkManager **</p>
+
+<pre><code class="language-sh">yum install NetworkManager-wifi
+systemctl restart NetworkManager
+</code></pre>
+
+<p>然后进入<code>nmtui</code>中的<strong>Activate a connection</strong>界面选择合适的WI-FI</p>
+
+<h2 id="安装ss">安装ss</h2>
+
+<p>略</p>
+
+<h2 id="安装privoxy">安装privoxy</h2>
+
+<p>安好了ss后，但它是<strong>socks5</strong>代理，我门在shell里执行的命令，发起的网络请求现在还不支持<strong>socks5</strong>代理，只支持<strong>http／https</strong>代理。为此需要安装<strong>privoxy</strong>代理，它能把电脑上所有<strong>http</strong>请求转发给ss</p>
+
+<p>下载</p>
+
+<pre><code class="language-shell">wget http://www.silvester.org.uk/privoxy/source/3.0.26%20%28stable%29/privoxy-3.0.26-stable-src.tar.gz
+</code></pre>
+
+<p>解压</p>
+
+<pre><code class="language-shell">tar -vxf privoxy-3.0.26-stable-src.tar.gz
+</code></pre>
+
+<p>安装前需要<code>useradd privoxy</code>创建一个用户privoxy</p>
+
+<pre><code class="language-shell">useradd privoxy
+</code></pre>
+
+<p>然后依次执行如下三条命令</p>
+
+<pre><code class="language-shell">autoheader &amp;&amp; autoconf
+./configure
+make &amp;&amp; make install
+</code></pre>
+
+<p>修改配置文件，该之前备份配置文件</p>
+
+<pre><code class="language-shell">cp  /etc/privoxy/config /etc/privoxy/config.bak
+</code></pre>
+
+<p>查看<code>vim /etc/privoxy/config</code>文件，</p>
+
+<p>先搜索关键字:<code>listen-address</code>找到<code>listen-address 127.0.0.1:8118</code>这一句，保证这一句没有注释，*8118*就是将来http代理要输入的端口。</p>
+
+<p>然后搜索<code>forward-socks5t</code>,将<code>forward-socks5t / 127.0.0.1:1080 .</code>此句的注释去掉</p>
+
+<p>执行如下命令启动<strong>privoxy</strong>，参考<a href="https://link.jianshu.com/?t=https%3A%2F%2Fwww.privoxy.org%2Fuser-manual%2Fstartup.html" target="_blank">官网,不同的平台对应不同的方法</a>(这里针对<strong>CentOS</strong>平台，有可能装在<strong>/usr/local/sbin</strong>下)</p>
+
+<pre><code class="language-shell">/usr/sbin/privoxy --user privoxy /etc/privoxy/config
+</code></pre>
+
+<p>执行<code>vim /etc/profile</code>,添加如下三句</p>
+
+<pre><code class="language-shell">export http_proxy=http://127.0.0.1:8118
+export https_proxy=http://127.0.0.1:8118
+export ftp_proxy=http://127.0.0.1:8118
+</code></pre>
+
+<p>如果不能访问，请重启机器，依次打开<strong>shadowsocks</strong>和<strong>privoxy</strong>再测试</p>
+
+<h2 id="设置-ss-和-privoxy-开机自启">设置 ss 和 privoxy 开机自启</h2>
+
+<h5 id="old-method">Old method</h5>
+
+<p>由于<strong>ss</strong>和<strong>privoxy</strong>服务需要时刻保持运行，所以想到把这两个服务配置成开机自启的服务，首先找到的是通过配置<strong>/etc/rc.local</strong>的方法，由于</p>
+
+<blockquote>
+<p>/etc/rc.local or /etc/rc.d/rc.local are no longer executed by default due to systemd-changes.
+to still use those, you need to make /etc/rc.d/rc.local executable</p>
+</blockquote>
+
+<p>具体做法如下</p>
+
+<pre><code class="language-shell">chmod +x /etc/rc.d/rc.local
+</code></pre>
+
+<p>假设需要开机自启的脚本为<strong>autobootup.sh</strong>，那么应该在<strong>/etc/rc.local</strong> (which is a symlink to <strong>/etc/rc.d/rc.local</strong>)中添加以下代码</p>
+
+<pre><code class="language-shell">/your/path/autobootup.sh
+</code></pre>
+
+<h5 id="recommended-method">Recommended method</h5>
+
+<p>但这样做其实有一些潜在问题，因为打开<strong>/etc/rc.local</strong>文件可以看到</p>
+
+<blockquote>
+<p>#!/bin/bash</p>
+
+<p>THIS FILE IS ADDED FOR COMPATIBILITY PURPOSES</p>
+
+<p>It is highly advisable to create own systemd services or udev rules</p>
+
+<p>to run scripts during boot instead of using this file.</p>
+
+<p>In contrast to previous versions due to parallel execution during boot</p>
+
+<p>this script will NOT be run after all other services.</p>
+
+<p>Please note that you must run &lsquo;chmod +x /etc/rc.d/rc.local&rsquo; to ensure</p>
+
+<p>that this script will be executed during boot.</p>
+</blockquote>
+
+<p>可以得知，这种方法是为了兼容性保留下来的，CentOS 7中建议使用创建自己的<strong>systemd services</strong>的方式解决这种需求</p>
+
+<p>1.Let us first create a custom script to be run at system boot automatically.</p>
+
+<blockquote>
+<p>#!/bin/bash</p>
+
+<p>#some services for auto run during boot</p>
+
+<p>echo &ldquo;This is a custom script to auto run during boot&rdquo; &gt; /var/tmp/script.out
+echo &ldquo;The time the script run was &ndash;&gt;  <code>date</code>&rdquo; &gt;&gt; /var/tmp/script.out</p>
+
+<p>#run ss-cli</p>
+
+<p>nohup sslocal -c /etc/shadowsocks.json /dev/null 2&gt;&amp;1 &amp;</p>
+
+<p>#run privoxy</p>
+
+<p>nohup /usr/local/sbin/privoxy &ndash;user privoxy /usr/local/etc/privoxy/config</p>
+</blockquote>
+
+<p>2.Add execute permission(if it’s not already set).</p>
+
+<pre><code class="language-shell">chmod +x /your/path/yourscript.sh
+</code></pre>
+
+<p>Create a new service unit file at <strong>/etc/systemd/system/sample.service</strong> with below content. The name of the service unit is user defined and can be any name of your choice.</p>
+
+<blockquote>
+<p>[Unit]
+Description=auto run some scripts during boot</p>
+
+<p>[Service]
+Type=forking
+ExecStart=/root/myscripts/autobootup.sh
+TimeoutStartSec=0</p>
+
+<p>[Install]
+WantedBy=default.target</p>
+</blockquote>
+
+<p>这里特别要注意的是<strong>Type=forking</strong>，由于这里开机自启动的脚本中本质是通过该脚本启动两个进程，所以<strong>Type</strong>对应的域应该填<strong>forking</strong></p>
+
+<p>Reload the systemd process to consider newly created sample.service OR every time when sample.service gets modified.</p>
+
+<pre><code class="language-shell">systemctl daemon-reload
+</code></pre>
+
+<p>Enable this service to start after reboot automatically.</p>
+
+<pre><code class="language-shell">systemctl enable sample.service
+</code></pre>
+
+<p>Start the service.</p>
+
+<pre><code class="language-shell">systemctl start sample.service
+</code></pre>
+
+<p>Reboot the host to verify whether the scripts are starting as expected during system boot.</p>
+
+<pre><code class="language-shell">systemctl reboot
+</code></pre>
+
+<h2 id="开启vt-x-or-amd-v-virtualization">开启VT-x or AMD-v virtualization</h2>
+
+<p>VT-x or AMD-v virtualization must be enabled in your computer’s BIOS.</p>
+
+<h2 id="安装virtualbox">安装virtualbox</h2>
+
+<p>去官网下载相应的rpm包(<strong>Oracle Linux 7 / Red Hat Enterprise Linux 7 / CentOS 7</strong>)</p>
+
+<p>把相应的rpm包传到服务器上</p>
+
+<p>执行</p>
+
+<pre><code class="language-shell">yum install VirtualBox-5.2-5.2.20_125813_el7-1.x86_64.rpm
+</code></pre>
+
+<p>这里特别说明下rpm命令与yum命令的区别</p>
+
+<blockquote>
+<p>Next step is to actually install the software package and you have the two options <code>yum</code> and <code>rpm</code>. The method <code>rpm -i skype-4.2.0.13-2.fc20.i686.rpm</code> will try to install the package but can complain about unmet dependencies. <code>yum install skype-4.2.0.13-2.fc20.i686.rpm</code> will check for dependencies and will try to resolve them and provide you a detailed installation plan which you can accept to actually install the package including all its dependencies.</p>
+
+<p>[StackExange]: <a href="https://unix.stackexchange.com/questions/343919/how-to-install-a-rpm-package-in-a-right-way" target="_blank">https://unix.stackexchange.com/questions/343919/how-to-install-a-rpm-package-in-a-right-way</a></p>
+</blockquote>
+
+<p>之后运行virtualbox的时候可能会出现某个模块未编译的问题，安装提示装一个类似于内核头文件的包后重新编译该模块即可，具体细节忘记截图了，这里就不展开了</p>
+
+<h2 id="安装-kubectl">安装 kubectl</h2>
+
+<p><strong>notice</strong>: You must use a kubectl version that is within one minor version difference of your cluster. For example, a v1.2 client should work with v1.1, v1.2, and v1.3 master. Using the latest version of kubectl helps avoid unforeseen issues.</p>
+
+<p><strong>CentOS, RHEL or Fedora</strong></p>
+
+<pre><code class="language-shell">$ cat &lt;&lt;EOF &gt; /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+$ yum install -y kubectl
+</code></pre>
+
+<h2 id="安装minikube">安装minikube</h2>
+
+<h5 id="environment-1">Environment</h5>
+
+<p>version: 0.30.0</p>
+
+<h5 id="install">Install</h5>
+
+<h6 id="normal">Normal</h6>
+
+<pre><code class="language-shell">$ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.30.0/minikube-linux-amd64 &amp;&amp; chmod +x minikube &amp;&amp; sudo cp minikube /usr/local/bin/ &amp;&amp; rm minikube
+</code></pre>
+
+<p>可以看到，minikube整个安装过程非常简单，按照官方文档的<strong>quick start</strong>执行</p>
+
+<pre><code class="language-shell">$ minikube start
+Starting local Kubernetes v1.7.5 cluster...
+Starting VM...
+SSH-ing files into VM...
+Setting up certs...
+Starting cluster components...
+Connecting to cluster...
+Setting up kubeconfig...
+Kubectl is now configured to use the cluster.
+</code></pre>
+
+<p>这是真正噩梦的开始，直接按照以上命令执行，会卡在<strong>Starting cluster components&hellip;</strong></p>
+
+<p>为了方便理解整个过程，先来看一下minikube的架构</p>
+
+<p><img src="https://i0.wp.com/blog.ichasco.com/wp-content/uploads/2018/06/minikube-architecture.jpg?resize=810%2C455&amp;ssl=1" alt="minikube-1" /></p>
+
+<p>在启动minikube的时候，首先会向gcr.io(待考证)拉取一个ISO镜像，因为之前配置好的缘故，这里是可以拉取成功的，之后会利用之前安装好的hypervisor在宿主机中启一个virtual machine，之后准备在该virtual machine中构建整个kubernetes，问题就发生在这一步，用于构建kubernetes的所有组件是以镜像形式存在的，所以在构建之初，会在virtual machine里向gcr.io拉取所有组件镜像，虽然之前通过配置，可以使得宿主机从gcr.io拉镜像下来，但在virtual machine中却没有做相关配置，这导致在virtual machine中是无法从gcr.io中拉取镜像的</p>
+
+<p>明白了这一点，就想到把virtual machine中的docker daemon配置一个代理，从而使得virtual machine中的docker daemon通过代理从gcr.io拉取镜像，minikube也提供相关的命令选项来实现这一点</p>
+
+<pre><code class="language-shell">$ minikube start --docker-env HTTP_PROXY=http://yourhost:yourport --docker-env HTTPS_PROXY=http://yourhost:yourport --docker-env NO_PROXY=192.168.99.0/24
+</code></pre>
+
+<p>特别注意的是<strong>NO_PROXY</strong>，上述命令已经使得virtual machine中的docker daemon走代理，但同时要保证容器之间的通信不能走代理，因为每个容器都是内网IP，一旦走代理，代理服务器将永远找不到要通信的容器对象，minikube中所有组件容器在<strong>192.168.99.0/24</strong>这个网域，所以这个网域的所有IP不应走代理</p>
+
+<p>但是执行上述命令后仍会发现卡在<strong>Starting cluster components&hellip;</strong></p>
+
+<p>这是因为安装在宿主机的<strong>kubectl</strong>是全局走代理的，在启动minikube后，<strong>kubectl</strong>需要和virtual machine中的kubernetes cluster通信，问题就出在这一步，这一步通信现阶段依然是走代理的，但由于virtual machine的ip是内网IP，所以通过代理去找这个内网IP是永远找不到的，导致<strong>kubectl</strong>无法建立通信，卡在这里，为了解决这个问题，让kubernetes访问该virtual machine时不走代理，直接通信，执行如下命令</p>
+
+<pre><code class="language-shell">#192.168.99.100是运行minikube cluster的virtual machine的IP
+$ export no_proxy=192.168.99.100
+</code></pre>
+
+<p>在见到如下信息后</p>
+
+<pre><code class="language-shell">Starting local Kubernetes v1.7.5 cluster...
+Starting VM...
+SSH-ing files into VM...
+Setting up certs...
+Starting cluster components...
+Connecting to cluster...
+Setting up kubeconfig...
+Kubectl is now configured to use the cluster.
+</code></pre>
+
+<p>执行如下命令(待考证)</p>
+
+<pre><code class="language-shell">$ export no_proxy=$no_proxy,$(minikube ip)
+$ export NO_PROXY=$no_proxy,$(minikube ip)
+</code></pre>
+
+<p>之后按照如下命令测试</p>
+
+<pre><code class="language-shell">$ kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
+deployment &quot;hello-minikube&quot; created
+$ kubectl expose deployment hello-minikube --type=NodePort
+service &quot;hello-minikube&quot; exposed
+
+# We have now launched an echoserver pod but we have to wait until the pod is up before curling/accessing it
+# via the exposed service.
+# To check whether the pod is up and running we can use the following:
+$ kubectl get pod
+NAME                              READY     STATUS              RESTARTS   AGE
+hello-minikube-3383150820-vctvh   1/1       ContainerCreating   0          3s
+# We can see that the pod is still being created from the ContainerCreating status
+$ kubectl get pod
+NAME                              READY     STATUS    RESTARTS   AGE
+hello-minikube-3383150820-vctvh   1/1       Running   0          13s
+# We can see that the pod is now Running and we will now be able to curl it:
+$ curl $(minikube service hello-minikube --url)
+CLIENT VALUES:
+client_address=192.168.99.1
+command=GET
+real path=/
+...
+$ kubectl delete service hello-minikube
+service &quot;hello-minikube&quot; deleted
+$ kubectl delete deployment hello-minikube
+deployment &quot;hello-minikube&quot; deleted
+$ minikube stop
+Stopping local Kubernetes cluster...
+Machine stopped.
+</code></pre>
+
+<p>可以发现是成功的</p>
+
+<h6 id="unnormal">Unnormal</h6>
+
+<p>这里参考阿里易立的思路，提供一种不配置代理，直接启minikube的方案</p>
+
+<p>之前之所以没办法按正常的方式启是因为minikube总需要从gcr.io拉镜像，导致镜像一直拉不下来，进而失败，易立的思路很简单，就是把minikube源码中涉及访问gcr.io的部分替换为访问阿里云的镜像源，从根本上解决了问题(需要注意的是，如果之后继续按照github上minikube项目中<strong>quick start</strong>部分去测试的话，是无法成功的，因为命令<code>kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080</code>本身就是从gcr.io拉镜像，而此时virtual machine中的docker daemon是没有配置代理的)</p>
+
+<p>解决办法暂时能想到的是从国内镜像源拉景象，这就涉及到可能需要重新docker login一下(具体有待尝试)</p>
+
+<p><a href="https://github.com/AliyunContainerService/minikube/tree/aliyun-v0.30.0" target="_blank">github</a> - 阿里云魔改版minikube分支</p>
+
+<p><a href="https://yq.aliyun.com/articles/221687?spm=a2c4e.11153940.blogcont221687.227.41a77733GGXJ0Y&amp;p=1#comments" target="_blank">云栖社区</a> - 易立云栖社区BLOG</p>
+
+<h2 id="参考">参考</h2>
+
+<p><a href="https://www.jianshu.com/p/41378f4e14bc" target="_blank">简书</a> - joncc的简书BLOG</p>
+
+<p><a href="https://fatfatson.github.io/2018/07/23/mac%E4%B8%8A%E5%AE%89%E8%A3%85mimikube/" target="_blank">就不怕忘记了</a> - mac上安装minikube及排错记</p>
+
+<p><a href="https://github.com/kubernetes/minikube/issues/530" target="_blank">github</a> - Starting minikube behind a proxy</p>
+
+<p><a href="https://github.com/Unknwon/wuwen.org/issues/20" target="_blank">github</a> - 代理环境下在 macOS 上安装 Minikube 小记</p>
+
+<p><a href="https://github.com/kubernetes/minikube/blob/master/docs/http_proxy.md" target="_blank">github</a> - Using Minikube with an HTTP Proxy</p>
+
+<p><a href="https://stackoverflow.com/questions/20778771/what-is-the-difference-between-0-0-0-0-127-0-0-1-and-localhost" target="_blank">What is the difference between 0.0.0.0, 127.0.0.1 and localhost?</a></p>
+
+      
+      <div class="related">
+</div>
+      
+    </div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <aside><div id="disqus_thread"></div></aside>
+  
+    <div id="show_comments"><a id="load_comments" class="button is-link">Load comments</a></div>
+  
+    <script type="text/javascript">
+      var disqus_shortname = 'analyse4';
+      function disqus() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+  
+      
+      var hash = window.location.hash.substr(1);
+      if ((hash.length > 8) && (hash.substring(0, 8) === "comment-")) {
+        disqus();
+        document.getElementById("show_comments").style.display = "none";
+      } else {
+        document.getElementById('load_comments').onclick = function() {
+          disqus();
+          document.getElementById("show_comments").style.display = "none";
+        };
+      }
+  
+
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/Analyse4">Zehua Lu</a> 2019</p>
+    
+      <p>Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/ribice/kiss">Kiss</a>.</p>
+    
+  </div>
+</section>
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="\/\/matomo.example.com\/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript>
+  <img src="//matomo.example.com/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+<script>
+    (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+            (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'),
+        m=f.getElementsByTagName('script')[0];
+        o.async=1; o.src=t; o.id='fathom-script';
+        m.parentNode.insertBefore(o,m)
+    })(document, window, '\/\/fathom.example.com\/tracker.js', 'fathom');
+    fathom('trackPageview');
+</script>
+</body>
+</html>
+

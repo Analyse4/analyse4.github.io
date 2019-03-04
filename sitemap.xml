@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://analyse4.github.io/posts/test/</loc>
+    <lastmod>2019-03-04T17:37:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://analyse4.github.io/posts/2019-03-04-the-journey-of-minikube/</loc>
+    <lastmod>2019-03-04T17:23:34+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://analyse4.github.io/posts/my-first-post/</loc>
     <lastmod>2019-03-04T15:07:12+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://analyse4.github.io/</loc>
-    <lastmod>2019-03-04T15:07:12+08:00</lastmod>
+    <lastmod>2019-03-04T17:37:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -20,8 +30,14 @@
   </url>
   
   <url>
+    <loc>https://analyse4.github.io/tags/kubernetes/</loc>
+    <lastmod>2019-03-04T17:23:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://analyse4.github.io/posts/</loc>
-    <lastmod>2019-03-04T15:07:12+08:00</lastmod>
+    <lastmod>2019-03-04T17:37:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   

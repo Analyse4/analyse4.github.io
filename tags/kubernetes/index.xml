@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Bla~ Bla~</title>
-    <link>https://analyse4.github.io/posts/</link>
-    <description>Recent content in Posts on Bla~ Bla~</description>
+    <title>Kubernetes on Bla~ Bla~</title>
+    <link>https://analyse4.github.io/tags/kubernetes/</link>
+    <description>Recent content in Kubernetes on Bla~ Bla~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/Analyse4&#34;&gt;Zehua Lu&lt;/a&gt; 2019</copyright>
-    <lastBuildDate>Mon, 04 Mar 2019 17:37:50 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 Mar 2019 17:23:34 +0800</lastBuildDate>
     
-	<atom:link href="https://analyse4.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://analyse4.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Test</title>
-      <link>https://analyse4.github.io/posts/test/</link>
-      <pubDate>Mon, 04 Mar 2019 17:37:50 +0800</pubDate>
-      
-      <guid>https://analyse4.github.io/posts/test/</guid>
-      <description>$ test  </description>
-    </item>
     
     <item>
       <title>The Journey of Minikube</title>
@@ -45,15 +36,6 @@
 安装系统 镜像从相应官网下载，制作好系统盘后，think-T410开机时按F12可以进入引导设备选择界面，选择从U盘启动，会进入到CentOS7安装引导界面
 在这里遇到了问题，无论以何种规格安装(mininal, graph)都会在安装过程中界面卡死，只能重启重装，之后还会在安装界面卡死，周而复始，起初我以为是目前的centos版本对于thinkpad-T410的硬件来说太新了，所以换ubuntu装了下(这里不得不提一句ubuntu的安装界面真的很友好)，发现也出现一样的问题，后来在StackExchange上找到了答案
  This happens often on computers with old graphics hardware.</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://analyse4.github.io/posts/my-first-post/</link>
-      <pubDate>Mon, 04 Mar 2019 15:07:12 +0800</pubDate>
-      
-      <guid>https://analyse4.github.io/posts/my-first-post/</guid>
-      <description>$ Why so serious?  </description>
     </item>
     
   </channel>
