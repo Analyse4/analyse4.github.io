@@ -13,20 +13,6 @@
     
     
     <item>
-      <title>Test</title>
-      <link>https://analyse4.github.io/posts/test/</link>
-      <pubDate>Mon, 04 Mar 2019 17:37:50 +0800</pubDate>
-      <author>Zehua Lu</author>
-      <guid>https://analyse4.github.io/posts/test/</guid>
-      <description></description>
-      
-      <content>&lt;pre&gt;&lt;code&gt;$ test
-&lt;/code&gt;&lt;/pre&gt;
-</content>
-      
-    </item>
-    
-    <item>
       <title>The Journey of Minikube</title>
       <link>https://analyse4.github.io/posts/2019-03-04-the-journey-of-minikube/</link>
       <pubDate>Mon, 04 Mar 2019 17:23:34 +0800</pubDate>
