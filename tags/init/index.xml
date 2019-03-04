@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Init on Bla~ Bla~</title>
+    <link>https://analyse4.github.io/tags/init/</link>
+    <description>Recent content in Init on Bla~ Bla~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/Analyse4&#34;&gt;Zehua Lu&lt;/a&gt; 2019</copyright>
+    <lastBuildDate>Mon, 04 Mar 2019 15:07:12 +0800</lastBuildDate>
+    
+	<atom:link href="https://analyse4.github.io/tags/init/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://analyse4.github.io/posts/my-first-post/</link>
+      <pubDate>Mon, 04 Mar 2019 15:07:12 +0800</pubDate>
+      
+      <guid>https://analyse4.github.io/posts/my-first-post/</guid>
+      <description>$ Why so serious?  </description>
+    </item>
+    
+  </channel>
+</rss>

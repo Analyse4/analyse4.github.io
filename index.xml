@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bla~ Bla~</title>
+    <link>https://analyse4.github.io/</link>
+    <description>Recent content on Bla~ Bla~</description>
+    <generator>Hugo - gohugo.io</generator>
+    <language>en</language>
+    <contact>analysek4@gmail.com</contact>
+    <copyright>&copy; <a href="https://github.com/Analyse4">Zehua Lu</a> 2019</copyright>
+    
+        <atom:link href="https://analyse4.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://analyse4.github.io/posts/my-first-post/</link>
+      <pubDate>Mon, 04 Mar 2019 15:07:12 +0800</pubDate>
+      <author>Zehua Lu</author>
+      <guid>https://analyse4.github.io/posts/my-first-post/</guid>
+      <description></description>
+      
+      <content>&lt;pre&gt;&lt;code&gt;$ Why so serious?
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+      
+    </item>
+    
+  </channel>
+</rss>
